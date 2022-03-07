@@ -1,0 +1,11 @@
+include dash_range_date/dash_range_date.min.js
+include dash_range_date/dash_range_date.min.js.map
+include dash_range_date/async-*.js
+include dash_range_date/async-*.js.map
+include dash_range_date/*-shared.js
+include dash_range_date/*-shared.js.map
+include dash_range_date/metadata.json
+include dash_range_date/package-info.json
+include README.md
+include LICENSE
+include package.json

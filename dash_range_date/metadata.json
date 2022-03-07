@@ -1,0 +1,412 @@
+{
+  "src/lib/components/DateRangePicker.react.js": {
+    "description": "DateRangePicker allows a user to set a date range.",
+    "displayName": "DateRangePicker",
+    "methods": [],
+    "props": {
+      "showMonthArrow": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": ""
+      },
+      "showMonthAndYearPickers": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": ""
+      },
+      "disabledDates": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": ""
+      },
+      "disabledDay": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
+      },
+      "minDate": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": ""
+      },
+      "maxDate": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": ""
+      },
+      "date": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": ""
+      },
+      "onChange": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
+      },
+      "onPreviewChange": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
+      },
+      "onRangeFocusChange": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
+      },
+      "classNames": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": ""
+      },
+      "locale": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": ""
+      },
+      "shownDate": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": ""
+      },
+      "onShownDateChange": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
+      },
+      "ranges": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "custom",
+            "raw": "rangeShape"
+          }
+        },
+        "required": false,
+        "description": ""
+      },
+      "preview": {
+        "type": {
+          "name": "shape",
+          "value": {
+            "startDate": {
+              "name": "object",
+              "required": false
+            },
+            "endDate": {
+              "name": "object",
+              "required": false
+            },
+            "color": {
+              "name": "string",
+              "required": false
+            }
+          }
+        },
+        "required": false,
+        "description": ""
+      },
+      "dateDisplayFormat": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": ""
+      },
+      "monthDisplayFormat": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": ""
+      },
+      "weekdayDisplayFormat": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": ""
+      },
+      "weekStartsOn": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": ""
+      },
+      "dayDisplayFormat": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": ""
+      },
+      "focusedRange": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "number"
+          }
+        },
+        "required": false,
+        "description": ""
+      },
+      "initialFocusedRange": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "number"
+          }
+        },
+        "required": false,
+        "description": ""
+      },
+      "months": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": ""
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": ""
+      },
+      "showDateDisplay": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": ""
+      },
+      "showPreview": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": ""
+      },
+      "displayMode": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'dateRange'",
+              "computed": false
+            },
+            {
+              "value": "'date'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": ""
+      },
+      "color": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": ""
+      },
+      "updateRange": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
+      },
+      "scroll": {
+        "type": {
+          "name": "shape",
+          "value": {
+            "enabled": {
+              "name": "bool",
+              "required": false
+            },
+            "monthHeight": {
+              "name": "number",
+              "required": false
+            },
+            "longMonthHeight": {
+              "name": "number",
+              "required": false
+            },
+            "monthWidth": {
+              "name": "number",
+              "required": false
+            },
+            "calendarWidth": {
+              "name": "number",
+              "required": false
+            },
+            "calendarHeight": {
+              "name": "number",
+              "required": false
+            }
+          }
+        },
+        "required": false,
+        "description": ""
+      },
+      "direction": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'vertical'",
+              "computed": false
+            },
+            {
+              "value": "'horizontal'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": ""
+      },
+      "startDatePlaceholder": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": ""
+      },
+      "endDatePlaceholder": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": ""
+      },
+      "navigatorRenderer": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
+      },
+      "rangeColors": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "string"
+          }
+        },
+        "required": false,
+        "description": ""
+      },
+      "editableDateInputs": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": ""
+      },
+      "dragSelectionEnabled": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": ""
+      },
+      "fixedHeight": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": ""
+      },
+      "calendarFocus": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": ""
+      },
+      "preventSnapRefocus": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": ""
+      },
+      "ariaLabels": {
+        "type": {
+          "name": "custom",
+          "raw": "ariaLabelsShape"
+        },
+        "required": false,
+        "description": ""
+      },
+      "inputRanges": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": ""
+      },
+      "staticRanges": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": ""
+      },
+      "footerContent": {
+        "type": {
+          "name": "any"
+        },
+        "required": false,
+        "description": ""
+      },
+      "headerContent": {
+        "type": {
+          "name": "any"
+        },
+        "required": false,
+        "description": ""
+      },
+      "renderStaticRangeLabel": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
+      }
+    }
+  }
+}
