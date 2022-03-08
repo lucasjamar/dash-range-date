@@ -1,24 +1,23 @@
-import dash_range_date
-import dash
-from dash.dependencies import Input, Output
-import dash_html_components as html
+import dash_range_date as drd
+from dash import Dash, Input, Output, html, dcc
 
-app = dash.Dash(__name__)
+app = Dash(__name__)
 
 app.layout = html.Div([
-    dash_range_date.DashRangeDate(
-        id='input',
-        value='my-value',
-        label='my-label'
-    ),
-    html.Div(id='output')
+    dcc.Markdown(id="output", children="Text here"),
+    html.Div(
+        drd.DateRangePicker(
+            id="input",
+            date=["2022-03-07", "2022-03-08"]
+        ),
+    )
 ])
 
 
-@app.callback(Output('output', 'children'), [Input('input', 'value')])
-def display_output(value):
-    return 'You have entered {}'.format(value)
+@app.callback(Output("output", "children"), Input("input", "date"))
+def display_output(date):
+    return f"You have entered {date[0]} to {date[1]}"
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app.run_server(debug=True)

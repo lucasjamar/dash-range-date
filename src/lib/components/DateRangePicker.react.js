@@ -1,11 +1,12 @@
-import React from 'react';
+import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import { DateRangePicker as ReactDateRangePicker } from 'react-date-range';
+import dayjs from 'dayjs';
+import { DateRangePicker as ReactDateRangePicker} from 'react-date-range';
 
 /**
  * DateRangePicker allows a user to set a date range.
  */
-export default class DateRangePicker extends DateRangePicker {
+export default class DateRangePicker extends Component {
     render() {
         const {id, setProps, date} = this.props;
 
@@ -25,6 +26,10 @@ export default class DateRangePicker extends DateRangePicker {
 DateRangePicker.defaultProps = {};
 
 DateRangePicker.propTypes = {
+  /**
+  * The ID used to identify this component in Dash callbacks.
+  */
+  id: PropTypes.string,
   showMonthArrow: PropTypes.bool,
   showMonthAndYearPickers: PropTypes.bool,
   disabledDates: PropTypes.array,
@@ -83,4 +88,9 @@ DateRangePicker.propTypes = {
   footerContent: PropTypes.any,
   headerContent: PropTypes.any,
   renderStaticRangeLabel: PropTypes.func,
+  /**
+  * Dash-assigned callback that should be called to report property changes
+  * to Dash, to make them available for callbacks.
+  */
+  setProps: PropTypes.func,
 };

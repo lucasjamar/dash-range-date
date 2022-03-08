@@ -10,8 +10,8 @@ DateRangePicker allows a user to set a date range.
 }
 
 \usage{
-''DateRangePicker(ariaLabels=NULL, calendarFocus=NULL, className=NULL,
-classNames=NULL, color=NULL, date=NULL,
+''DateRangePicker(id=NULL, ariaLabels=NULL, calendarFocus=NULL,
+className=NULL, classNames=NULL, color=NULL, date=NULL,
 dateDisplayFormat=NULL, dayDisplayFormat=NULL,
 direction=NULL, disabledDates=NULL, disabledDay=NULL,
 displayMode=NULL, dragSelectionEnabled=NULL,
@@ -32,6 +32,8 @@ weekdayDisplayFormat=NULL)
 }
 
 \arguments{
+\item{id}{Character. The ID used to identify this component in Dash callbacks.}
+
 \item{ariaLabels}{}
 
 \item{calendarFocus}{Character. }

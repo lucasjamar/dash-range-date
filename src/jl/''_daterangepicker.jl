@@ -8,6 +8,7 @@ export ''_daterangepicker
 A DateRangePicker component.
 DateRangePicker allows a user to set a date range.
 Keyword arguments:
+- `id` (String; optional): The ID used to identify this component in Dash callbacks.
 - `ariaLabels` (optional)
 - `calendarFocus` (String; optional)
 - `className` (String; optional)
@@ -60,7 +61,7 @@ Those elements have the following types:
 - `weekdayDisplayFormat` (String; optional)
 """
 function ''_daterangepicker(; kwargs...)
-        available_props = Symbol[:ariaLabels, :calendarFocus, :className, :classNames, :color, :date, :dateDisplayFormat, :dayDisplayFormat, :direction, :disabledDates, :displayMode, :dragSelectionEnabled, :editableDateInputs, :endDatePlaceholder, :fixedHeight, :focusedRange, :footerContent, :headerContent, :initialFocusedRange, :inputRanges, :locale, :maxDate, :minDate, :monthDisplayFormat, :months, :preventSnapRefocus, :preview, :rangeColors, :ranges, :scroll, :showDateDisplay, :showMonthAndYearPickers, :showMonthArrow, :showPreview, :shownDate, :startDatePlaceholder, :staticRanges, :weekStartsOn, :weekdayDisplayFormat]
+        available_props = Symbol[:id, :ariaLabels, :calendarFocus, :className, :classNames, :color, :date, :dateDisplayFormat, :dayDisplayFormat, :direction, :disabledDates, :displayMode, :dragSelectionEnabled, :editableDateInputs, :endDatePlaceholder, :fixedHeight, :focusedRange, :footerContent, :headerContent, :initialFocusedRange, :inputRanges, :locale, :maxDate, :minDate, :monthDisplayFormat, :months, :preventSnapRefocus, :preview, :rangeColors, :ranges, :scroll, :showDateDisplay, :showMonthAndYearPickers, :showMonthArrow, :showPreview, :shownDate, :startDatePlaceholder, :staticRanges, :weekStartsOn, :weekdayDisplayFormat]
         wild_props = Symbol[]
         return Component("''_daterangepicker", "DateRangePicker", "dash_range_date", available_props, wild_props; kwargs...)
 end

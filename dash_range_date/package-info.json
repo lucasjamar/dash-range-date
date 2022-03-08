@@ -24,6 +24,7 @@
   "author": "Lucas Jamar <lucasjamar@hotmail.com>",
   "license": "MIT",
   "dependencies": {
+    "dayjs": "^1.10.8",
     "ramda": "^0.26.1",
     "react-date-range": "^1.4.0"
   },

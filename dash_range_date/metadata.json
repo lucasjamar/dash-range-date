@@ -4,6 +4,13 @@
     "displayName": "DateRangePicker",
     "methods": [],
     "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
       "showMonthArrow": {
         "type": {
           "name": "bool"
@@ -401,6 +408,13 @@
         "description": ""
       },
       "renderStaticRangeLabel": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
         "type": {
           "name": "func"
         },
