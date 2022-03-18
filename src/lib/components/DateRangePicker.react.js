@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import dayjs from 'dayjs';
 import { DateRangePicker as ReactDateRangePicker} from 'react-date-range';
+import 'react-date-range/dist/styles.css';
+import 'react-date-range/dist/theme/default.css';
 
 /**
  * DateRangePicker allows a user to set a date range.

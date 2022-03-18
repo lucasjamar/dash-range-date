@@ -5,12 +5,10 @@ app = Dash(__name__)
 
 app.layout = html.Div([
     dcc.Markdown(id="output", children="Text here"),
-    html.Div(
-        drd.DateRangePicker(
-            id="input",
-            date=["2022-03-07", "2022-03-08"]
-        ),
-    )
+    drd.DateRangePicker(
+        id="input",
+        date=["2022-03-07", "2022-03-08"]
+    ),
 ])
 
 
