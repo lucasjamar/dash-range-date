@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import dayjs from 'dayjs';
 import { DateRangePicker as ReactDateRangePicker} from 'react-date-range';
+import { ariaLabelsShape } from 'react-date-range/dist/accessibility'
+import { rangeShape } from 'react-date-range/dist/components/DayCell';
 import 'react-date-range/dist/styles.css';
 import 'react-date-range/dist/theme/default.css';
 
@@ -38,7 +40,7 @@ DateRangePicker.propTypes = {
   disabledDay: PropTypes.func,
   minDate: PropTypes.object,
   maxDate: PropTypes.object,
-  date: PropTypes.object,
+  date: PropTypes.arrayOf(PropTypes.string),
   onChange: PropTypes.func,
   onPreviewChange: PropTypes.func,
   onRangeFocusChange: PropTypes.func,
